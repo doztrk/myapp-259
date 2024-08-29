@@ -14,6 +14,11 @@ import { Style4 } from "./components/03-styles/style4";
 import { Style5 } from "./components/03-styles/style5";
 import { Clock1 } from "./components/04-clock1/clock1";
 
+import { Header } from "./components/03-styles/homework/header";
+import { Sidebar } from "./components/03-styles/homework/sidebar";
+import { Content } from "./components/03-styles/homework/content";
+import { styles } from "./components/03-styles/homework/styles";
+
 const App = () => {
 	return (
 		<div>
@@ -31,9 +36,14 @@ const App = () => {
 			<Style3 />
 			<Style4 />
 			<Style5 />
-			*/}
-			<Clock1/>
-			
+			<Clock1/>*/}
+			<div style={styles.appContainer}>
+				<Header />
+				<div style={styles.mainContainer}>
+					<Sidebar />
+					<Content />
+				</div>
+			</div>
 		</div>
 	);
 };
