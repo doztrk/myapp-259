@@ -2,7 +2,9 @@ import React from "react";
 import "../../assets/sass/clock.scss";
 import moment from "moment";
 
-export const Clock1 = () => {
+export const Clock2 = (props) => {
+	const { textColor, bgColor, hideTime } = props;
+
 	const dateTime = moment();
 	const timeStr = dateTime.format("HH:mm");
 	const dateStr = dateTime.format("LL");
@@ -22,17 +24,17 @@ export const Clock1 = () => {
 		message = "Night";
 	}
 
+	//Destructuring
+	const style = { color: textColor, backgroundColor: bgColor };
+
 	return (
-		<div className="clock-container">
-			<div className="time">{timeStr}</div>
+		<div className="clock-container" style={style}>
+			{!!hideTime || <div className="time">{timeStr}</div>}
 			<div>
 				<div className="date">{dateStr}</div>
 				<div className="day">
 					{dayStr} {message}
 				</div>
-
-				
-
 			</div>
 		</div>
 	);
