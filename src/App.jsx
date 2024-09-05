@@ -21,6 +21,7 @@ import { Clock1 } from "./components/04-clock1/clock1";
 import Greetings from "./components/05-props/greetings";
 import { Products } from "./components/05-props/products";
 import { Clock2 } from "./components/06-clock2/clock2";
+import { Image } from "./components/07-image/image";
 
 const App = () => {
 	return (
@@ -52,11 +53,13 @@ const App = () => {
 			<Clock1/>
 			
 			<Greetings/>
-			<Products />*/}
-
+			<Products />
+			
 			<Clock2 textColor="red" bgColor="black" />
 			<Clock2 textColor="white" bgColor="green" />
 			<Clock2 textColor="white" bgColor="black" hideTime={true} />
+			*/}
+			<Image />
 		</div>
 	);
 };
