@@ -22,6 +22,8 @@ import Greetings from "./components/05-props/greetings";
 import { Products } from "./components/05-props/products";
 import { Clock2 } from "./components/06-clock2/clock2";
 import { Image } from "./components/07-image/image";
+import { Gallery } from "./components/08-image-gallery/gallery";
+import { ProfileCard } from "./components/09-profile-card/profile-card";
 
 const App = () => {
 	return (
@@ -58,8 +60,11 @@ const App = () => {
 			<Clock2 textColor="red" bgColor="black" />
 			<Clock2 textColor="white" bgColor="green" />
 			<Clock2 textColor="white" bgColor="black" hideTime={true} />
-			*/}
 			<Image />
+			<Gallery />
+			*/}
+
+			<ProfileCard avatar="profile.jpg" name="Jane Doe" location="San Francisco, USA" followers={12436} following={1472} shots={1} />
 		</div>
 	);
 };
