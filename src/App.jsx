@@ -26,6 +26,9 @@ import { Gallery } from "./components/08-image-gallery/gallery";
 import { ProfileCard } from "./components/09-profile-card/profile-card";
 import { ReactBootstrap } from "./components/10-bootstrap/react-bootstrap";
 import { Icons } from "./components/11-icons/icons";
+import { Event1 } from "./components/12-events/event1";
+import { Event2 } from "./components/12-events/event2";
+import { Shop } from "./components/13-shop/shop";
 
 const App = () => {
 	return (
@@ -66,9 +69,13 @@ const App = () => {
 			<Gallery />
 			<ProfileCard avatar="profile.jpg" name="Jane Doe" location="San Francisco, USA" followers={12436} following={1472} shots={1} />
 			<ReactBootstrap />
-
-			*/}
 			<Icons />
+			<Event1 />
+			<Event2 />
+			*/}
+			<Shop />
+
+			
 		</div>
 	);
 };
