@@ -29,6 +29,8 @@ import { Icons } from "./components/11-icons/icons";
 import { Event1 } from "./components/12-events/event1";
 import { Event2 } from "./components/12-events/event2";
 import { Shop } from "./components/13-shop/shop";
+import { Stateless } from "./components/14-state/stateless";
+import { State } from "./components/14-state/state";
 
 const App = () => {
 	return (
@@ -72,9 +74,11 @@ const App = () => {
 			<Icons />
 			<Event1 />
 			<Event2 />
-			*/}
 			<Shop />
+			<Stateless />
 
+			*/}
+			<State />
 			
 		</div>
 	);
