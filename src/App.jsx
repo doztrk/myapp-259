@@ -31,6 +31,9 @@ import { Event2 } from "./components/12-events/event2";
 import { Shop } from "./components/13-shop/shop";
 import { Stateless } from "./components/14-state/stateless";
 import { State } from "./components/14-state/state";
+import { Counter1 } from "./components/15-counter/counter1";
+import { Counter2 } from "./components/15-counter/counter2";
+import { UserList } from "./components/16-birthday/user-list";
 
 const App = () => {
 	return (
@@ -76,10 +79,13 @@ const App = () => {
 			<Event2 />
 			<Shop />
 			<Stateless />
+			<State />
+			<Counter1 />
+			<Counter2 />
 
 			*/}
-			<State />
-			
+
+			<UserList />
 		</div>
 	);
 };

@@ -1,12 +1,11 @@
 import React from "react";
 import { Container, Button } from "react-bootstrap";
 
-
 export const Stateless = () => {
 	let classes = "bg-dark text-light";
 
-    //In this component, even though the classes var's value changes,
-    //because component doenst have a state where it orders it to re-render, changes arent shown to the client
+	//In this component, even though the classes var's value changes,
+	//because component doenst have a state where it orders it to re-render, changes arent shown to the client
 
 	const handleClasses = (mode) => {
 		if (mode === "dark") {
