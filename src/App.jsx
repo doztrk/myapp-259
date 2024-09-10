@@ -34,6 +34,10 @@ import { State } from "./components/14-state/state";
 import { Counter1 } from "./components/15-counter/counter1";
 import { Counter2 } from "./components/15-counter/counter2";
 import { UserList } from "./components/16-birthday/user-list";
+import { UseEffect1 } from "./components/17-use-effect/use-effect1";
+import { UseEffect2 } from "./components/17-use-effect/use-effect2";
+import { Clock3 } from "./components/18-clock3/clock3";
+import { UseEffect3 } from "./components/17-use-effect/use-effect3";
 
 const App = () => {
 	return (
@@ -82,10 +86,14 @@ const App = () => {
 			<State />
 			<Counter1 />
 			<Counter2 />
-
+			<UserList />
+			
+			<UseEffect2 />
+			<UseEffect1 />
+			<Clock3 />
 			*/}
 
-			<UserList />
+			<UseEffect3 />
 		</div>
 	);
 };
