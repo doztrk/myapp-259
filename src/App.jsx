@@ -38,6 +38,9 @@ import { UseEffect1 } from "./components/17-use-effect/use-effect1";
 import { UseEffect2 } from "./components/17-use-effect/use-effect2";
 import { Clock3 } from "./components/18-clock3/clock3";
 import { UseEffect3 } from "./components/17-use-effect/use-effect3";
+import { CountryFilter } from "./components/19-country-filter/country-filter";
+import { UseRef } from "./components/20-useref/useref";
+import ClassComp from "./components/21-class-comp/class-comp";
 
 const App = () => {
 	return (
@@ -91,9 +94,11 @@ const App = () => {
 			<UseEffect2 />
 			<UseEffect1 />
 			<Clock3 />
-			*/}
-
 			<UseEffect3 />
+			<CountryFilter />
+			<UseRef />
+			*/}
+			<ClassComp />
 		</div>
 	);
 };
