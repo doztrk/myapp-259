@@ -43,6 +43,9 @@ import { UseRef } from "./components/20-useref/useref";
 import ClassComp from "./components/21-class-comp/class-comp";
 import { ProductsStore } from "./components/22-products/products-store";
 import { Recipes } from "./components/23-recipes/recipes";
+import { Parent } from "./components/24-child-to-parent-prop-transfer/parent";
+import { Form1 } from "./components/25-forms/form1";
+import { Form2 } from "./components/25-forms/form2";
 
 const App = () => {
 	return (
@@ -101,9 +104,11 @@ const App = () => {
 			<UseRef />
 			<ClassComp />
 			<ProductsStore/>
-			*/}
-
 			<Recipes />
+			<Parent />
+			<Form1 />
+			*/}
+			<Form2 />
 		</div>
 	);
 };
