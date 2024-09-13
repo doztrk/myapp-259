@@ -42,6 +42,7 @@ import { CountryFilter } from "./components/19-country-filter/country-filter";
 import { UseRef } from "./components/20-useref/useref";
 import ClassComp from "./components/21-class-comp/class-comp";
 import { ProductsStore } from "./components/22-products/products-store";
+import { Recipes } from "./components/23-recipes/recipes";
 
 const App = () => {
 	return (
@@ -99,9 +100,10 @@ const App = () => {
 			<CountryFilter />
 			<UseRef />
 			<ClassComp />
-			*/}
 			<ProductsStore/>
-			
+			*/}
+
+			<Recipes />
 		</div>
 	);
 };
