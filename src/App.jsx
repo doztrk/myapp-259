@@ -41,6 +41,7 @@ import { UseEffect3 } from "./components/17-use-effect/use-effect3";
 import { CountryFilter } from "./components/19-country-filter/country-filter";
 import { UseRef } from "./components/20-useref/useref";
 import ClassComp from "./components/21-class-comp/class-comp";
+import { ProductsStore } from "./components/22-products/products-store";
 
 const App = () => {
 	return (
@@ -97,8 +98,10 @@ const App = () => {
 			<UseEffect3 />
 			<CountryFilter />
 			<UseRef />
-			*/}
 			<ClassComp />
+			*/}
+			<ProductsStore/>
+			
 		</div>
 	);
 };
