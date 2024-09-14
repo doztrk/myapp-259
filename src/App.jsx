@@ -46,6 +46,9 @@ import { Recipes } from "./components/23-recipes/recipes";
 import { Parent } from "./components/24-child-to-parent-prop-transfer/parent";
 import { Form1 } from "./components/25-forms/form1";
 import { Form2 } from "./components/25-forms/form2";
+import { Form3 } from "./components/25-forms/form3";
+import { Form4 } from "./components/25-forms/form4";
+import { Form5 } from "./components/25-forms/form5";
 
 const App = () => {
 	return (
@@ -107,8 +110,14 @@ const App = () => {
 			<Recipes />
 			<Parent />
 			<Form1 />
-			*/}
 			<Form2 />
+			<Form3 />
+			<Form4/>
+			*/}
+			<Form5 />
+			
+			
+			
 		</div>
 	);
 };

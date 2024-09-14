@@ -8,13 +8,31 @@ export const Form2 = () => {
 	const [email, setEmail] = useState("");
 	const [adress, setAdress] = useState("");
 
-	const handleSubmit = () => {
-		alert("Hello");
+	const handleSubmit = (e) => {
+		//1-Canceling default submit
+
+		//2-Form Validation
+		if (!firstName || !lastName || !phoneNumber || !email || !adress) {
+			alert("Please fill in all fields");
+			return;
+		}
+
+		//3-Creating Payload to be sent to API
+		const payload = {
+			firstName,
+			lastName,
+			phoneNumber,
+			email,
+			adress,
+		};
+
+		//4-Sending Payload to API
+		alert("Form Submitted Successfully");
 	};
 
 	return (
 		<Container className="mt-5">
-			<Form>
+			<Form action="#" onSubmit={handleSubmit}>
 				<Form.Group className="mb-3" controlId="firstName">
 					<Form.Label>First Name</Form.Label>
 					<Form.Control type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
@@ -40,7 +58,7 @@ export const Form2 = () => {
 					<Form.Control type="text" as="textarea" rows={3} value={adress} onChange={(e) => setAdress(e.target.value)} />
 				</Form.Group>
 
-				<Button variant="primary" type="submit" onClick={handleSubmit}>
+				<Button variant="primary" type="submit">
 					Send
 				</Button>
 			</Form>
