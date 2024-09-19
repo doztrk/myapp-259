@@ -50,6 +50,7 @@ import { Form3 } from "./components/25-forms/form3";
 import { Form4 } from "./components/25-forms/form4";
 import { Form5 } from "./components/25-forms/form5";
 import { Form6 } from "./components/25-forms/form6";
+import { Todo } from "./components/todo-app-homework/todo";
 
 const App = () => {
 	return (
@@ -115,8 +116,9 @@ const App = () => {
 			<Form3 />
 			<Form4/>
 			<Form5 />
-			*/}
 			<Form6 />
+			*/}
+			<Todo />
 		</div>
 	);
 };
