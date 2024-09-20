@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { HelloWorld } from "../components/01-hello/hello-world";
 import HelloReact from "../components/01-hello/hello-react";
 import { UserLayout } from "../layouts/user-layout";
@@ -18,6 +18,8 @@ import { Home } from "../components/00-common/home";
 import { Customers } from "../components/26-routing/customers";
 import { CustomerDetails } from "../components/26-routing/customer-details";
 import { UseNavigate } from "../components/26-routing/use-navigate";
+import { Converter } from "../components/27-currencies/converter";
+
 const router = createBrowserRouter([
 	{
 		path: "/",
@@ -109,7 +111,7 @@ const router = createBrowserRouter([
 						element: <Customers />,
 					},
 					{
-						path: ":customerId", //: makes it a variable
+						path: ":customerId", //: makes it a dynamic parameter
 						element: <CustomerDetails />,
 					},
 				],
@@ -118,6 +120,14 @@ const router = createBrowserRouter([
 				path: "use-navigate",
 				element: <UseNavigate />,
 			},
+			{
+				path: "converter",
+				element: <Converter />,
+			},
+			{
+				path: "*",
+				element: <p>There's nothing here: 404!</p>,
+			}
 		],
 	},
 ]);

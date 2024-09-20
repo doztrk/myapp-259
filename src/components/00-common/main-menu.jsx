@@ -41,7 +41,6 @@ export const MainMenu = () => {
 					<Nav.Link to="/jsx/7" as={Link} active={pathname === "/jsx/7" ? true : false}>
 						Jsx-7
 					</Nav.Link>
-
 					<Nav.Link to="/style/1" as={Link} active={pathname === "/style/1" ? true : false}>
 						Style 1
 					</Nav.Link>
@@ -62,6 +61,9 @@ export const MainMenu = () => {
 					</Nav.Link>
 					<Nav.Link to="/use-navigate" as={Link} active={pathname === "/use-navigate" ? true : false}>
 						UseNavigate
+					</Nav.Link>
+					<Nav.Link to="/converter" as={Link} active={pathname === "/converter" ? true : false}>
+						Exchange
 					</Nav.Link>
 				</Nav>
 			</Card.Body>
