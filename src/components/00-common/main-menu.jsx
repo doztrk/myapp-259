@@ -65,6 +65,9 @@ export const MainMenu = () => {
 					<Nav.Link to="/converter" as={Link} active={pathname === "/converter" ? true : false}>
 						Exchange
 					</Nav.Link>
+					<Nav.Link to="/todo-app" as={Link} active={pathname === "/todo-app" ? true : false}>
+						TodoAPP
+					</Nav.Link>
 				</Nav>
 			</Card.Body>
 		</Card>
