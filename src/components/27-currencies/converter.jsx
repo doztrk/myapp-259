@@ -10,10 +10,11 @@ export const Converter = () => {
 	const [currency, setCurrency] = useState("AUD");
 	const [result, setResult] = useState(0);
 
+	
 	useEffect(() => {
 		const turkishLira = (amount / currencies[currency]).toFixed(2);
 		setResult(turkishLira);
-	}, [amount, currency]);
+	}, [amount, currency,currencies]);
 
 	return (
 		<InputGroup className="mb-3">

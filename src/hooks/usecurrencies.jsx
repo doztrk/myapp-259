@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 
-export const UseCurrencies = () => {
+export const useCurrencies = () => {
 	const [currencies, setCurrencies] = useState([]);
-	const [error, setError] = useState(null);
+	const [error, setError] = useState("");
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
@@ -18,7 +18,12 @@ export const UseCurrencies = () => {
 				setLoading(false);
 			}
 		};
-		fetchCurrencies();
+		//Normally, there is no reason to put setTimeout here.Faster the data comes,the better.
+		//We put setTimeout to show the loading screen
+		const timer = setTimeout(() => {
+			fetchCurrencies();
+		}, 1000);
+		return () => clearTimeout(timer);
 	}, []);
 
 	return { currencies, error, loading };
