@@ -6,8 +6,8 @@ export const Notes = ({ notes, toggleComplete, deleteNote }) => {
 	return (
 		<>
 			{notes.map((note) => (
-				<Col>
-					<Note key={note.id} note={note} toggleComplete={toggleComplete} deleteNote={deleteNote} />
+				<Col key={note.id}>
+					<Note note={note} toggleComplete={toggleComplete} deleteNote={deleteNote} />
 				</Col>
 			))}
 		</>

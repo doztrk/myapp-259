@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Notes } from "./notes.jsx";
+import { Notes } from "./Notes.jsx";
 import { NoteForm } from "./NoteForm.jsx";
 import { Col, Container, Row } from "react-bootstrap";
 
