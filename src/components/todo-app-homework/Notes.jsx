@@ -1,5 +1,5 @@
 import React from "react";
-import { Note } from "./Note.Jsx";
+import { Note } from "./Note.jsx";
 import { Col, ListGroup } from "react-bootstrap";
 
 export const Notes = ({ notes, toggleComplete, deleteNote }) => {

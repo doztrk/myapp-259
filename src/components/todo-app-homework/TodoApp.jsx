@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Notes } from "./notes";
-import { NoteForm } from "./NoteForm";
+import { Notes } from "./notes.jsx";
+import { NoteForm } from "./NoteForm.jsx";
 import { Col, Container, Row } from "react-bootstrap";
 
 export const TodoApp = () => {
